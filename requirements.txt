@@ -1,0 +1,49 @@
+# requirements.txt
+# Core application dependencies. Install with: pip install -r requirements.txt
+
+# --- Core Scientific Computing ---
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+# Optional but recommended for robust 3D math
+numpy-quaternion>=2022.4.2
+
+# --- Video & Audio I/O ---
+opencv-python>=4.8
+decord>=0.6.0
+ffmpeg-python>=0.2.0
+
+# --- ML & Semantics Stack ---
+# IMPORTANT: Install torch/torchvision separately by following instructions at pytorch.org
+# This ensures you get the correct version for your hardware (CPU/CUDA).
+timm>=1.0.0
+transformers>=4.44.0
+open-clip-torch>=2.24.0
+groundingdino>=0.1.0
+segment-anything>=1.0
+openai-whisper>=20231117
+pyannote.audio>=3.0.0
+
+# --- Metrics & Image Processing ---
+scikit-image>=0.22```
+
+#### Development File: `requirements-dev.txt`
+(This includes tools for testing, linting, and analysis.)
+```txt
+# requirements-dev.txt
+# Tools for development, testing, and analysis. Install with: pip install -r requirements-dev.txt
+
+# --- Testing ---
+pytest>=7.0
+
+# --- Code Quality & Formatting ---
+black>=24.0
+ruff>=0.4
+mypy>=1.8
+pre-commit>=3.6
+
+# --- Analysis & Visualization ---
+matplotlib>=3.7
+seaborn>=0.13
+notebook>=7.1
+tqdm>=4.66
